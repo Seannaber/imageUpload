@@ -1,0 +1,225 @@
+.resultImage {
+	height: 300px;
+	margin: 0 auto;
+	max-width: 98%;
+	margin-bottom: -60px;
+	mix-blend-mode: multiply;
+}
+
+#results {
+	margin-top: 50px;
+}
+
+.resultDiv {
+/*	width: 90%;*/
+/*	margin-bottom: 100px;*/
+	padding: 25px 0px;
+	border: 1px dotted gray;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,.85);
+}
+
+.resultDivSuccess {
+/*	width: 90%;*/
+/*	margin-bottom: 100px;*/
+	padding: 25px 0px;
+	border: 1px dotted gray;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,.85);
+}
+
+.resultDivSuccessWeb {
+/*	width: 90%;*/
+/*	margin-bottom: 100px;*/
+	padding: 25px 0px;
+	border: 1px dotted gray;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,.85);
+}
+
+.resultDivFail {
+/*	width: 90%;*/
+/*	margin-bottom: 100px;*/
+	padding: 25px 0px;
+	border: 1px dotted gray;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,.85);
+}
+
+
+.success {
+	background-color: green;
+	color: white;
+	font-size: 2.25em;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+    top: -284px;
+    left: 87px;
+}
+
+.howToSuccess {
+	background-color: green;
+	color: white;
+	font-size: 2.25em;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+/*	position: relative;
+    top: -284px;
+    left: 87px;*/
+}
+.success span, .successWeb span, .fail span {
+	position: relative;
+	top: 7px;
+}
+
+.fail {
+	background-color: red;
+	color: white;
+	font-size: 2.25em;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+    top: -284px;
+    left: 87px;
+}
+
+.howToFail {
+	background-color: red;
+	color: white;
+	font-size: 2.25em;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+/*	position: relative;
+    top: -284px;
+    left: 87px;*/
+}
+
+.successWeb {
+	background-color: orange;
+	color: white;
+	font-size: 2.25em;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+    top: -284px;
+    left: 87px;
+}
+
+.howToSuccessWeb {
+	background-color: orange;
+	color: white;
+	font-size: 2.25em;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+/*	position: relative;
+    top: -284px;
+    left: 87px;*/
+}
+
+.brand-logo img {
+	width: 200px;
+}
+
+.fileName {
+	font-size: 1.25em;
+	width: 80%;
+    margin: 15px auto;
+}
+
+nav {
+	background-color: #a94442;
+}
+
+body {
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: white;
+	text-decoration: none;
+}
+
+#bigButton {
+	position: absolute;
+    left: 40%;
+    top: 50%;
+    height: 100px;
+    width: 250px;
+    font-size: 1.5em;
+}
+
+#bigButton:before {
+	position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.chip {
+	background-color: rgba(0,0,0,.10);
+}
+
+.material-icons {
+	font-size: 1.25em;
+}
+
+.progress {
+	width: 80%;
+	margin: 10px auto;
+	height: 15px;
+}
+
+.determinate {
+	height: 15px;
+}
+
+.details {
+	font-size: .8em;
+}
+
+#howTo, #error {
+	background-color: rgba(49,72,56,.92);
+	color: white;
+	padding: 5% 15%;
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	height: 80%;
+	width: 80%;
+	z-index: 10000000;
+	min-height: 750px;
+}
+
+.close {
+	font-size: 5em;
+	float: right;
+	color: white;
+	opacity: .9;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+#howToIcons {
+	margin-top: 30px;
+}
+
+#howToIcons p {
+	margin-top: 15px;
+	font-size: 1.25em;
+}

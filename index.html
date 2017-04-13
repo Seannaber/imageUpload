@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TWM Image Submission</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="docs/Submitting.pdf" target="_blank">Digital Submission</a></li>
+		  <li><a href="docs/InHouse.pdf" target="_blank">In-House Photography</a></li>
+		  <!-- <li class="divider"></li> -->
+		  <li><a href="docs/VendorGuide.pdf" target="_blank">Vendor Instructions</a></li>
+		  <li><a href="docs/Flowchart.pdf" target="_blank">Process Flowchart</a></li>
+		</ul>
+	  <nav>
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo"><img src="img/TWM.png"></a>
+	      <ul id="nav-mobile" class="right hide-on-small-and-down">
+	        <li><a id="smallButton" class="waves-effect waves-light btn" onclick="openWidget()"><i class="material-icons right">replay</i>Check More Images</a></li>
+	        <li><a href="#" onclick="$('#howTo').toggle();">How to</a></li>
+	        <li><a class="dropdown-button" href="#" data-activates="dropdown1">Documentation<i class="material-icons right">arrow_drop_down</i></a></li>
+	        <li><a href="#">FAQ</a></li>
+	        <li><a href="#">Help</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+	<div class="valign-wrapper">
+		<button class="center-align waves-effect waves-light btn-large pulse" onclick="openWidget()" id="bigButton"><!-- <span class="glyphicon glyphicon-upload"></span>  -->Test Images</button>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="row text-center" id="results">
+			
+		</div>
+	</div>
+	<!-- <div class="success text-center"><span class="glyphicon glyphicon-ok"></span></div>
+	<div class="fail text-center"><span class="glyphicon glyphicon-remove"></span></div>
+	<div class="successWeb text-center"><span class="glyphicon glyphicon-ok"></span></div> -->
+	<div id="howTo">
+		<span onclick="$('#howTo').toggle();" class="close"><i class=material-icons>cancel</i></span>
+		<h1>How to use the site</h2>
+		<h3>Uploading Images</h3>
+		<p>Click the "TEST IMAGES" button and either browse to your files or drag-and-drop them into the drop zone. You can upload as many files as you wish at a time. If you've already uploaded some images and you'd like to upload more, click the "check more images" button at the top of the screen.</p>
+		<div class="row text-center" id="howToIcons">
+			<div class="col-sm-4">
+				<a class="howToSuccess btn-floating btn-large waves-effect waves-light green lighten-1 pulse"><i class="material-icons">done</i></a>
+				<p>Your image will be approved!</p>
+			</div>
+			<div class="col-sm-4">
+				<a class="howToSuccessWeb btn-floating btn-large waves-effect waves-light orange darken-1 pulse"><i class="material-icons">warning</i></a>
+				<p>Your image will be approved for web use only.</p>
+			</div>
+			<div class="col-sm-4">
+				<a class="howToFail btn-floating btn-large waves-effect waves-light red darken-2 pulse"><i class="material-icons">cancel</i></a>
+				<p>Do not submit.</br>Image will be rejected.</p>
+			</div>
+		</div>
+		<h3>Viewing docs</h3>
+		<p>Need a refresher on the process or PDFs with our image requirementes to send to vendors? Select the "documentation" menu option above.</p>
+	</div>
+	<div id="error">
+		<span onclick="$('#error').toggle();" class="close"><i class=material-icons>cancel</i></span>
+	</div>
+</body>
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src='js/jquery.cloudinary.js' type='text/javascript'></script>  
+<script src='js/jquery.ui.widget.js' type='text/javascript'></script>
+<script src='js/jquery.iframe-transport.js' type='text/javascript'></script>
+<script src='js/jquery.fileupload.js' type='text/javascript'></script>
+<script src='js/jquery.cloudinary.js' type='text/javascript'></script>
+<script src="http://widget.cloudinary.com/global/all.js" type="text/javascript">  
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+<script src="js/script.js"></script>
+</html>
