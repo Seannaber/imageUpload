@@ -1,9 +1,13 @@
 .resultImage {
-	height: 300px;
 	margin: 0 auto;
 	max-width: 98%;
-	margin-bottom: -60px;
+	max-height: 300px;
 	mix-blend-mode: multiply;
+}
+
+.imgWrapper {
+	height: 300px;
+	margin-bottom: -60px;
 }
 
 #results {
@@ -56,7 +60,7 @@
 	border-radius: 50%;
 	position: relative;
     top: -284px;
-    left: 87px;
+    left: 35%;
 }
 
 .howToSuccess {
@@ -84,7 +88,7 @@
 	border-radius: 50%;
 	position: relative;
     top: -284px;
-    left: 87px;
+    left: 35%;
 }
 
 .howToFail {
@@ -108,7 +112,7 @@
 	border-radius: 50%;
 	position: relative;
     top: -284px;
-    left: 87px;
+    left: 35%;
 }
 
 .howToSuccessWeb {
@@ -191,7 +195,7 @@ a:hover, a:active, a:focus {
 	font-size: .8em;
 }
 
-#howTo, #error {
+#howTo, #error, #downloadZip {
 	background-color: rgba(49,72,56,.92);
 	color: white;
 	padding: 5% 15%;
@@ -203,6 +207,10 @@ a:hover, a:active, a:focus {
 	width: 80%;
 	z-index: 10000000;
 	min-height: 750px;
+}
+
+#howTo {
+	display: block;
 }
 
 .close {
@@ -223,3 +231,12 @@ a:hover, a:active, a:focus {
 	margin-top: 15px;
 	font-size: 1.25em;
 }
+
+.container-fluid {
+	padding: 0px 5%;
+}
+
+#downloadBtn {
+	margin-bottom: 50px;
+}
+
